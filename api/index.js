@@ -24,7 +24,7 @@ app.listen(PORT, () => {
 });
 
 app.get('/', (req, res) => {
-    res.send("Welcome");
+    res.send({ message: "Welcome to api" });
 });
 
 app.get('/users', (req, res) => {
