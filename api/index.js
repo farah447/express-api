@@ -6,7 +6,7 @@ const productRouter = require('../routes/productRoute');
 
 const app = express();
 
-const mongoURL = process.env.MONGODB_URL || "";
+const mongoURL = process.env.MONGODB_URI || "";
 
 const connectDB = async () => {
     try {
